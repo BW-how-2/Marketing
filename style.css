@@ -134,7 +134,16 @@ table {
 		display: flex;
 		padding-top: 3%;
 		width: 100%;
-		height: 500px;
+		flex-direction: column;
+		align-items: center;
+		/* height: 500px; */
+		text-align: center;
+	}
+	.mid div img{
+		max-width: 250px;
+		border-radius: 65px;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 	/* *** FOOTER *** */
 	hr{
