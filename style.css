@@ -5,7 +5,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Khand:wght@300&display=swap');
+
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -54,6 +56,10 @@ table {
 
 /* ***THIS IS THE START OF THE MAIN STYLING SHEET*** */
 @media (min-width: 320px){
+	/* ALL */
+	a{
+		text-decoration: none;
+	}
 /*Header*/
 	h1{
 		padding-top: 5%;
@@ -86,12 +92,12 @@ table {
 		border-radius: 13px;
 		color: black;
 		box-shadow: 0 1.5px lightgrey;
-		font-family: 'Concert One', cursive;
-		letter-spacing: 1px;
+		font-family: 'Khand', sans-serif;
+		letter-spacing: 2px;
 	}
 	.headerBox{
 		width: 100%;
-		box-shadow: 0 0 5px black;
+		box-shadow: 0 0 10px 0 lightgrey;
 	}
 
 
@@ -114,7 +120,7 @@ table {
 	p{
 		text-align: center;
 		width: 100%;
-		font-family: 'Concert One', cursive;
+		font-family: 'Khand', sans-serif;
 	}
 	div img{
 		max-width: 100px;
@@ -134,7 +140,7 @@ table {
 		justify-content: space-evenly;
 	}
 	footer nav div a{
-		font-family: 'Concert One', cursive;
+		font-family: 'Khand', sans-serif;
 		color: black;
 		border: none;
 		box-shadow: none;
@@ -143,5 +149,35 @@ table {
 		padding: 1.5%;
 	}
 
+
+
+
+	/* *** THIS IS THE TEAM PAGE SECTION *** */
+	.team{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 5%;
+	}
+	.team img{
+		max-width: 70px;
+		border-radius: 45px;
+	}
+	.team div{
+		width: 70%;
+		padding: 3%;
+	}
+	.team p{
+		padding: 2%;
+		border: 1px solid black;
+		width: 100%;
+		border-radius: 25px;
+		font-size: 1.1rem;
+		letter-spacing: 1px;
+	}
+
+	footer nav{
+		padding-top: 2%;
+	}
 
 }
