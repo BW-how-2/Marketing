@@ -61,12 +61,28 @@ table {
 		text-decoration: none;
 	}
 /*Header*/
+	.headerBox{
+		width: 100%;
+	}
+	.login{
+		display: flex;
+		flex-direction: row-reverse;
+		padding-right: 5%;
+		padding-top: 2%;
+	}
+	.login a{
+		padding: 1% 2%;
+		border-radius: 5px;
+		font-family: 'Khand', sans-serif;
+		letter-spacing: 1px;
+		border: 1px Solid black;
+		background-color: rgb(74, 182, 248);
+		}
 	h1{
-		padding-top: 5%;
 		width: 100%;
 		text-align: center;
 		font-family: 'Leckerli One', cursive;
-		font-size: 2.5rem;
+		font-size: 3.5rem;
 		color: #FCA311;
 	}
 	header nav{
@@ -94,9 +110,6 @@ table {
 		box-shadow: 0 1.5px lightgrey;
 		font-family: 'Khand', sans-serif;
 		letter-spacing: 2px;
-	}
-	.headerBox{
-		width: 100%;
 	}
 
 
@@ -147,6 +160,8 @@ table {
 		padding-top: 5%;
 		padding-bottom: 5%;
 	}
+
+
 	/* *** FOOTER *** */
 	hr{
 		width: 90%;
@@ -185,6 +200,9 @@ table {
 	.team div{
 		width: 70%;
 		padding: 3%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.team p{
 		padding: 2%;
@@ -204,6 +222,9 @@ table {
 /* Break point  for device screens at 600 px or bigger */
 
 @media (min-width: 600px){
+
+
+	/* HEADER */
 	.headerBox nav{
 		flex-direction: row;
 		justify-content: center;
@@ -212,6 +233,14 @@ table {
 		width: 20%;
 	}
 	
+/* MID SECTION */
+	.mid div img{
+		max-width: 300px;
+	}
+
+
+
+/* FOOTER */
 	footer nav{
 		flex-direction: row-reverse;
 	}
