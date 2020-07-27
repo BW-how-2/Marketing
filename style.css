@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,7 +61,7 @@ table {
 		text-align: center;
 		font-family: 'Leckerli One', cursive;
 		font-size: 2.5rem;
-		color: #14213D;
+		color: #FCA311;
 	}
 	header nav{
 		display: flex;
@@ -83,31 +84,64 @@ table {
 		border: 1px solid #FFFFFF;
 		padding: 2% 5%;
 		border-radius: 13px;
-		color: #FCA311;
-		box-shadow: 0 1px #14213D;
+		color: black;
+		box-shadow: 0 1.5px lightgrey;
 		font-family: 'Concert One', cursive;
 		letter-spacing: 1px;
 	}
 	.headerBox{
 		width: 100%;
-		box-shadow: 0 0 8px lightgray;
+		box-shadow: 0 0 5px black;
 	}
+
+
+
+
 	/* *** Mission Statement Box *** */
 	.missionBox{
 		display: flex;
 		padding-top: 5%;
 	}
-	p{
-		width: 60%
+	.missionBox div{
+		text-align: center;
+		font-family: 'Concert One', cursive;
+		width: 65%;
 	}
+	h3{
+		padding-bottom: 2%;
+		font-size: 2rem;
+	}
+	p{
+		text-align: center;
+		width: 100%;
+		font-family: 'Concert One', cursive;
+	}
+	div img{
+		max-width: 100px;
+	}
+
+
+
+
 	/* *** THE MIDDLE SECTION *** */
 	.mid{
 		display: flex;
+		padding-top: 3%;
 	}
 	/* *** FOOTER *** */
-	footer{
+	footer nav{
 		display: flex;
 		justify-content: space-evenly;
 	}
+	footer nav div a{
+		font-family: 'Concert One', cursive;
+		color: black;
+		border: none;
+		box-shadow: none;
+	}
+	footer nav div{
+		padding: 1.5%;
+	}
+
 
 }
