@@ -64,19 +64,19 @@ table {
 	.headerBox{
 		width: 100%;
 	}
-	.login{
+	.headerBox div{
 		display: flex;
-		flex-direction: row-reverse;
-		padding-right: 5%;
-		padding-top: 2%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
 	}
-	.login a{
-		padding: 1% 2%;
+	.login{
+		padding: 0.5% 1%;
 		border-radius: 5px;
 		font-family: 'Khand', sans-serif;
-		letter-spacing: 1px;
-		border: 1px Solid black;
-		background-color: rgb(74, 182, 248);
+		font-size: 1.3rem;
+		font-weight: bold;
+		letter-spacing: 0.5px;
 		}
 	h1{
 		width: 100%;
@@ -84,6 +84,8 @@ table {
 		font-family: 'Leckerli One', cursive;
 		font-size: 3.5rem;
 		color: #FCA311;
+		padding-bottom: 2%;
+		padding-top: 2%;
 	}
 	header nav{
 		display: flex;
@@ -139,6 +141,10 @@ table {
 		text-align: center;
 		width: 100%;
 		font-family: 'Khand', sans-serif;
+		font-size: 1.3rem;
+	}
+	.missionBox div p[word="ALL"]{
+		font-weight: 500;
 	}
 	div img{
 		max-width: 100px;
@@ -234,10 +240,20 @@ table {
 	.headerBox nav div{
 		width: 20%;
 	}
+	header nav{
+		padding-top: 2%;
+	}
+	h1{
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
 	
 /* MID SECTION */
 	.mid div img{
 		max-width: 300px;
+	}
+	.missionBox p{
+		font-size: 1.5rem;
 	}
 	/* TEAM PAGE  */
 	.team div{
@@ -281,7 +297,34 @@ table {
 	header nav div{
 		padding: 2%;
 	}
+	.headerBox div{
+		flex-direction: row;
+		padding-top: 2%;
+	}
+	h1{
+		width: 80%;
+		text-align: left;
+		padding: 0%;
+	}
+
+	/* Mission box */
+
+	.missionBox{
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 90%;
+		margin: 0 auto;
+		font-size: 2rem;
+	}
+	.missionBox div{
+		width: 60%;
+	}
+	.missionBox img{
+		max-width: 200px;
+	}
 	/* MIDDLE STUFF */
+
+
 	.mid{
 		margin: 0 auto;
 		width: 90%;
@@ -309,6 +352,7 @@ table {
 		width: 30%;
 		padding: 0%;
 	}
+
 
 	/* FOOTER */
 	footer nav div{
