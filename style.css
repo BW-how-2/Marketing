@@ -142,6 +142,7 @@ table {
 		width: 100%;
 		font-family: 'Khand', sans-serif;
 		font-size: 1.3rem;
+		line-height: 150%;
 	}
 	.missionBox div p[word="ALL"]{
 		font-weight: 500;
@@ -149,9 +150,9 @@ table {
 	div img{
 		max-width: 100px;
 	}
-
-
-
+	b{
+		font-weight: bold;
+	}
 
 	/* *** THE MIDDLE SECTION *** */
 	.mid{
@@ -203,8 +204,8 @@ table {
 		padding-top: 5%;
 	}
 	.team img{
-		max-width: 70px;
-		border-radius: 45px;
+		max-width: 100px;
+		border-radius: 50%;
 	}
 	.team div{
 		width: 60%;
@@ -214,13 +215,20 @@ table {
 		align-items: center;
 	}
 	.team div p{
-		padding: 2%;
+		padding: 5% 0;
 		border: 1px solid black;
 		border-radius: 25px;
 		font-size: 1.1rem;
 		letter-spacing: 1px;
+		box-shadow: 10px 10px 15px 5px lightgrey;
 	}
-
+	h2{
+		font-weight: bold;
+		font-family: 'Khand', sans-serif;
+		letter-spacing: 2px;
+		text-align: center;
+		padding-top: 2%;
+	}
 	footer nav{
 		padding-top: 2%;
 	}
@@ -263,6 +271,7 @@ table {
 	.team div img{
 		padding: 5%;
 		border-radius: 50%;
+		max-width: 130px;
 	}
 
 
@@ -278,21 +287,37 @@ table {
 	}
 }
 
+/* BREAK POINT */
 @media (min-width:800px){
 
 	.team{
 		margin: auto;
 		width: 80%;
 	}
+	.team div img{
+		max-width: 150px;
+	}
 }
 
+/* BREAK POINT */
 @media (min-width: 1000px){
 /* HEADER */
-	.login a{
-		padding: 0.5% 1%;
+	.login:hover{
+		font-weight: bolder;
+		transition: 0.5s;
+		transform: scale(1.4);
 	}
 	header nav{
 		padding: 0;
+	}
+	/* header nav a::before{
+		font-weight: bold;
+	} */
+	header nav a:hover {
+		color:white;
+		background-color: black;
+		transition: 0.5s;
+		transform: scale(1.3);
 	}
 	header nav div{
 		padding: 2%;
@@ -322,6 +347,7 @@ table {
 	.missionBox img{
 		max-width: 200px;
 	}
+
 	/* MIDDLE STUFF */
 
 
@@ -352,10 +378,27 @@ table {
 		width: 30%;
 		padding: 0%;
 	}
-
-
+	/* TEAM PAGE  */
+	.team div{
+		width: 50%;
+	}
+	.team div img{
+		max-width: 150px;
+	}
 	/* FOOTER */
 	footer nav div{
 		width: 15%;
+	}
+}
+
+@media(min-width: 1200px){
+/* TEAM PAGE */
+	.team{
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-top: 2%;
+	}
+	.team div{
+		max-width: 40%;
 	}
 }
