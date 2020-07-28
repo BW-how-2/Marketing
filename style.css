@@ -109,9 +109,12 @@ table {
 		color: black;
 		box-shadow: 0 1.5px lightgrey;
 		font-family: 'Khand', sans-serif;
+		font-weight: 600;
 		letter-spacing: 2px;
 	}
-
+	.login2{
+		visibility: hidden;
+	}
 
 
 
@@ -128,7 +131,7 @@ table {
 		font-family: 'Concert One', cursive;
 		width: 60%;
 	}
-	h3{
+	h2{
 		padding-bottom: 2%;
 		font-size: 2rem;
 	}
@@ -198,16 +201,15 @@ table {
 		border-radius: 45px;
 	}
 	.team div{
-		width: 70%;
+		width: 60%;
 		padding: 3%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	.team p{
+	.team div p{
 		padding: 2%;
 		border: 1px solid black;
-		width: 100%;
 		border-radius: 25px;
 		font-size: 1.1rem;
 		letter-spacing: 1px;
@@ -237,6 +239,15 @@ table {
 	.mid div img{
 		max-width: 300px;
 	}
+	/* TEAM PAGE  */
+	.team div{
+		flex-direction: row;
+		width: 70%;
+	}
+	.team div img{
+		padding: 5%;
+		border-radius: 50%;
+	}
 
 
 
@@ -251,4 +262,56 @@ table {
 	}
 }
 
+@media (min-width:800px){
 
+	.team{
+		margin: auto;
+		width: 80%;
+	}
+}
+
+@media (min-width: 1000px){
+/* HEADER */
+	.login a{
+		padding: 0.5% 1%;
+	}
+	header nav{
+		padding: 0;
+	}
+	header nav div{
+		padding: 2%;
+	}
+	/* MIDDLE STUFF */
+	.mid{
+		margin: 0 auto;
+		width: 90%;
+	}
+	.top-Mid{
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.top-Mid p{
+		width: 50%;
+	}
+	.bottom-Mid{
+		display: flex;
+		padding-bottom: 1%;
+	}
+	.mid div{
+		width: 100%;
+		padding-top: 2%;
+	}
+	.mid div p{
+		width: 100%;
+	}
+	.mid div img{
+		max-width: 250px;
+		width: 30%;
+		padding: 0%;
+	}
+
+	/* FOOTER */
+	footer nav div{
+		width: 15%;
+	}
+}
