@@ -82,7 +82,7 @@ table {
 		}
 		.headerBox div div{
 			display: flex;
-			width: 50%;
+			width: 49%;
 			text-align: center;
 		}
 	h1{
@@ -98,11 +98,9 @@ table {
 		display: flex;
 	}
 	nav{
-		/* display: flex; */
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
-		/* padding-top: 5%; */
 		padding-bottom: 4%;
 	}
 	nav div{
@@ -129,7 +127,6 @@ table {
 	.missionBox{
 		display: flex;
 		padding-top: 5%;
-		/* justify-content: center; */
 		align-items: center;
 		flex-direction: column-reverse;
 	}
@@ -287,6 +284,7 @@ table {
 		flex-direction: column;
 		align-items: flex-end;
 		padding-right: 5%;
+
 	}
 	.login{
 		text-align: right;
@@ -335,7 +333,9 @@ table {
 
 /* BREAK POINT */
 @media (min-width:800px){
-
+	.headerBox nav{
+		padding-bottom: 2%;
+	}
 	.team{
 		margin: auto;
 		width: 80%;
@@ -356,12 +356,12 @@ table {
 		transition: 0.5s;
 		transform: scale(1.4);
 	}
+	.headerBox div div a{
+		width: 20%;
+	}
 	header nav{
 		padding: 0;
 	}
-	/* header nav a::before{
-		font-weight: bold;
-	} */
 	header nav a:hover {
 		color:black;
 		background-color: white;
@@ -443,6 +443,9 @@ table {
 
 @media(min-width: 1200px){
 /* TEAM PAGE */
+.headerBox div div a{
+	width: 15%;
+}
 	.team{
 		flex-direction: row;
 		flex-wrap: wrap;
