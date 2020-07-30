@@ -284,6 +284,8 @@ table {
 /* FOOTER */
 	footer nav{
 		flex-direction: row-reverse;
+		justify-content: flex-end;
+		padding-left: 5%;
 	}
 	footer nav div{
 		width: 24%;
@@ -411,7 +413,7 @@ table {
 	}
 	/* FOOTER */
 	footer nav div{
-		width: 15%;
+		width: 10%;
 	}
 }
 
