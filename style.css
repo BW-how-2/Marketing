@@ -108,7 +108,6 @@ table {
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 4%;
 	}
 	nav div{
 		width: 50%;
@@ -153,9 +152,6 @@ table {
 		color: Black;
 		text-align: center;
 	}
-	.statements{
-		padding: 3% 0;
-	}
 	.bolderIAm{
 		color: #FCA311;
 		font-weight: 1000;
@@ -166,7 +162,6 @@ table {
 	/* *** THE MIDDLE SECTION *** */
 	.mid{
 		display: flex;
-		padding-top: 3%;
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
@@ -174,25 +169,25 @@ table {
 		text-align: center;
 	}
 	.mid div img{
-		max-width: 250px;
 		border-radius: 15px;
-		box-shadow: 0px 3px 20px 0px black;
+		box-shadow: 0px 1px 10px 0px lightgray;
+		max-width: 300px;
+		max-height: 150px;
+		margin-top: 5%;
 	}
 	.mid div div img{
-		border-radius: 0;
+		max-width: 90%;
+		max-height: 100%;
 	}
 	.mid div{
-		padding-top: 5%;
-		padding-bottom: 5%;
+		padding-top: 2%;
+		padding-bottom: 2%;
 	}
 	/* *** FOOTER *** */
-	hr{
-		width: 90%;
-	}
 	footer nav{
 		display: flex;
 		justify-content: space-evenly;
-		padding-bottom: 2%;
+		padding-bottom: 1%;
 	}
 	footer nav img{
 		max-width: 100px;
@@ -255,9 +250,6 @@ table {
 		width: 25%;
 	}
 /* MID SECTION */
-	.mid div img{
-		max-width: 300px;
-	}
 	.missionBox p{
 		font-size: 1.5rem;
 	}
@@ -270,6 +262,9 @@ table {
 	.bolderIAm{
 		color: #FCA311;
 		font-weight: 1000;
+	}
+	.mid div img{
+		max-height: fit-content;
 	}
 	/* TEAM PAGE  */
 	.team div{
@@ -286,6 +281,7 @@ table {
 		flex-direction: row-reverse;
 		justify-content: flex-end;
 		padding-left: 5%;
+		width: 95%;
 	}
 	footer nav div{
 		width: 24%;
@@ -302,6 +298,9 @@ table {
 
 /* BREAK POINT */
 @media (min-width:800px){
+	.mid div img{
+		max-width: 500px;
+	}
 	.headerBox nav{
 		padding-bottom: 2%;
 	}
@@ -326,7 +325,7 @@ table {
 	}
 	.login{
 		width:100%;
-		padding-bottom: 3%;
+		padding-bottom: 7%;
 	}
 	.login:hover{
 		font-weight: bolder;
@@ -370,39 +369,37 @@ table {
 	.missionBox div{
 		width: 60%;
 	}
-	.missionBox img{
-		max-width: 200px;
-	}
 
 	/* MIDDLE STUFF *//*THE HOW TO SECTION*/
 
 
 	.mid{
 		margin: 0 auto;
-		width: 70%;
+		width: 80%;
 	}
 	.top-Mid{
 		display: flex;
 		flex-direction: row-reverse;
-	}
-	.top-Mid p{
-		width: 50%;
+		align-items: baseline;
 	}
 	.bottom-Mid{
 		display: flex;
 		padding-bottom: 1%;
+		align-items: baseline;
 	}
 	.mid div{
 		width: 100%;
 		padding-top: 2%;
 	}
-	.mid div p{
-		width: 100%;
-	}
 	.mid div img{
 		max-width: 400px;
-		width: 30%;
-		padding: 0%;
+		max-height: 200px;
+	}
+	.mid .top-Mid div img{
+		margin-left: 10%;
+	}
+	.mid .bottom-Mid div img{
+		margin-right: 10%;
 	}
 	/* TEAM PAGE  */
 	.team div{
@@ -418,7 +415,6 @@ table {
 }
 
 @media(min-width: 1200px){
-/* TEAM PAGE */
 	.headerBox div div a{
 	width: 20%;
 	}
@@ -428,6 +424,10 @@ table {
 	.login{
 		font-size: 1.2rem;
 	}
+	.mid div img {
+		max-height: 230px;
+	}
+	/* Team page */
 	.team{
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -435,5 +435,10 @@ table {
 	}
 	.team div{
 		max-width: 40%;
+	}
+}
+@media(min-width: 1200px){
+	.mid div img{
+		max-height: 250px;
 	}
 }
